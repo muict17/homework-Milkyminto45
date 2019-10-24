@@ -13,13 +13,12 @@ int main() {
 	  printf("%d ",a[i]);
 	}
 	
-	int max=a[0],repeat=0;
+	int max=a[0];
 	for(i=1;i<n;i++) {
 	  if(max<a[i]) {
 	    max=a[i];
-      repeat=i;
 	  }
 	}
-	printf("\nThe maximum repeating number is: %d",a[repeat]);
+	printf("\nThe maximum repeating number is: %d",max);
 	return 0;
 }
